@@ -1,0 +1,98 @@
+<!-- This is the card page of the website. Users will enter their cards into this list. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>One Piece card tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+</head>
+<body>
+    <header>
+        <h1>One Piece Card Tracker</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cards.html">Cards</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Enter your cards in the table below!</h2>
+        
+        <!-- Form to add new cards -->
+        <form id="cardForm">
+            <label for="cardColor">Card Color:</label>
+            <input type="text" id="cardColor" name="cardColor" required>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+            <label for="cardName">Card Name:</label>
+            <input type="text" id="cardName" name="cardName" required>
+            <label for="cardType">Card Type:</label>
+            <select id="cardType" name="cardType" required>
+                <option value="Character">Character</option>
+                <option value="Event">Event</option>
+                <option value="Stage">Stage</option>
+                <option value="Leader">Leader</option>
+            </select>
+            <label for="cardRarity">Card Rarity:</label>
+            <input type="text" id="cardRarity" name="cardRarity" required>
+            <label for="alternateArt">Alternate Art:</label>
+            <input type="checkbox" id="alternateArt" name="alternateArt">
+            <button type="submit">Add Card</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Card Color</th>
+                    <th>Card Number</th>
+                    <th>Card Name</th>
+                    <th>Card Type</th>
+                    <th>Card Rarity</th>
+                    <th>Alternate Art</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cardTableBody">
+                <!-- Card entries will go here -->
+            </tbody>
+        </table>
+    </main>
+    <main>
+        <h2>Deck List</h2>
+        <form id="deckForm">
+            <label for="deckName">Deck Name:</label>
+            <input type="text" id="deckName" name="deckName" required>
+            <label for="deckLeader">Deck Leader:</label>
+            <input type="text" id="deckLeader" name="deckLeader" required>
+            <label for="deckColor">Deck Color:</label>
+            <select id="deckColor" name="deckColor" required>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Purple">Purple</option>
+                <option value="Black">Black</option>
+                <option value="Multi">Multi</option>
+            </select>
+            <button type="submit">Create Deck</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Deck Name</th>
+                    <th>Deck Leader</th>
+                    <th>Deck Color</th>
+                    <th>Deck Size</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="deckTableBody">
+                <!-- Deck entries will go here -->
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
