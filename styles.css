@@ -120,4 +120,14 @@ button:hover {
     button {
         flex: 0 0 auto;
     }
+    #cardForm {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    #deckForm {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 }
